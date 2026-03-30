@@ -4,12 +4,13 @@
     <title>Analytics Demo</title>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8ZWYCL67X"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-881Q2R41EN"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-R8ZWYCL67X');
+
+        gtag('config', 'G-881Q2R41EN');
     </script>
 </head>
 
@@ -23,12 +24,11 @@
     <script>
         function trackClick() {
             alert("Button clicked");
-            if (typeof gtag === "function") {
-                gtag('event', 'button_click', {
-                    event_category: 'engagement',
-                    event_label: 'demo_button'
-                });
-            }
+
+            gtag('event', 'button_click', {
+                event_category: 'engagement',
+                event_label: 'demo_button'
+            });
         }
     </script>
 
